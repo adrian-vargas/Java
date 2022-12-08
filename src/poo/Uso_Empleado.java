@@ -8,9 +8,9 @@ public class Uso_Empleado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		Empleado empleado1=new Empleado("Paco Gómez", 85000,1990,12,17);
-		Empleado empleado2=new Empleado("Ana López", 95000,1995,06,02);
-		Empleado empleado3=new Empleado("María Martín", 105000,2002,03,15);
+		Empleado empleado1=new Empleado("Paco GÃ³mez", 85000,1990,12,17);
+		Empleado empleado2=new Empleado("Ana LÃ³pez", 95000,1995,06,02);
+		Empleado empleado3=new Empleado("MarÃ­a MartÃ­n", 105000,2002,03,15);
 		empleado1.subeSueldo(5);
 		empleado2.subeSueldo(5);
 		empleado3.subeSueldo(5);
@@ -21,16 +21,16 @@ public class Uso_Empleado {
 		Jefatura jefe_RRHH=new Jefatura("Adrian",55000,2006,9,25);
 		jefe_RRHH.estableceIncentivo(2570);
 		Empleado[] misEmpleados=new Empleado[6]; 
-		misEmpleados[0]=new Empleado("Paco Gómez",85000,1990,12,17);
-		misEmpleados[1]=new Empleado("Ana López", 95000,1995,06,02);
-		misEmpleados[2]=new Empleado("María Martín", 105000,2002,03,15);
-		misEmpleados[3]=new Empleado("Antonio Fernández");
-		misEmpleados[4]=jefe_RRHH;//Polimosrfismo en acción
-		misEmpleados[5]=new Jefatura("María",95000,1999,5,26);
+		misEmpleados[0]=new Empleado("Paco GÃ³mez",85000,1990,12,17);
+		misEmpleados[1]=new Empleado("Ana LÃ³pez", 95000,1995,06,02);
+		misEmpleados[2]=new Empleado("MarÃ­a MartÃ­n", 105000,2002,03,15);
+		misEmpleados[3]=new Empleado("Antonio FernÃ¡ndez");
+		misEmpleados[4]=jefe_RRHH;//Polimosrfismo en acciÃ³n
+		misEmpleados[5]=new Jefatura("MarÃ­a",95000,1999,5,26);
 		Jefatura jefa_Finanzas=(Jefatura)misEmpleados[5];
 		jefa_Finanzas.estableceIncentivo(55000);
 		
-		System.out.println(jefa_Finanzas.tomar_decisiones("Dar más días de vacaciones a los empleados"));
+		System.out.println(jefa_Finanzas.tomar_decisiones("Dar mÃ¡s dÃ­as de vacaciones a los empleados"));
 		System.out.println("El Jefe "+jefa_Finanzas.dameNombre()+" Tiene un bonus de: "+jefa_Finanzas.establece_bonus(500));
 		System.out.println("El empleado "+misEmpleados[3].dameNombre()+" tiene un bonus de: "+misEmpleados[3].establece_bonus(200));
 		/*Empleado director_comercial=new Jefatura("Sandra",8500,2012,05,05);
@@ -138,7 +138,7 @@ class Jefatura extends Empleado implements Jefes{
 		super(nom, sue, agno, mes, dia);
 	}
 	public String tomar_decisiones(String decision) {
-		return "Un miembro de la dirección ha tomado la decision de: "+decision;
+		return "Un miembro de la direcciï¿½n ha tomado la decision de: "+decision;
 	}
 	public double establece_bonus(double gratificacion) {
 		double prima=2000;
